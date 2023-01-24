@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <title>Calculadora usando o Teorema de Pitágoras</title>
+</head>
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <img src="./img/pitagoras.jpg" width="200">
+        <span class="navbar-brand mb-0 h1">Calculadora usando o Teorema de Pitágoras</span>
+    </nav>
+    <div class="container-fluid">
+        <br >
+        <div class="row">
+            <div class="col-md-6">
+                <p>O teorema de Pitágoras relaciona as medidas dos lados de um triângulo retângulo da seguinte maneira: Em um triângulo retângulo, o quadrado da hipotenusa é igual à soma dos quadrados dos catetos. Observe a seguinte fórmula: a<sup>2</sup> = b<sup>2</sup> + c<sup>2</sup>, onde a = hipotenusa, b e c = catetos</p>
+            </div>
+            <div class="col-md-6">
+                <img src="./img/teorema-pitagoras.png" width="500">
+            </div>
+        </div>
+        <form>
+            <div class="row">
+                <div class="form-group col-md-3">
+                    <label for="catetoOposto">Cateto Oposto (b)</label>
+                    <input type="number" class="form-control" id="catetoOposto">
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="catetoAdjacente">Cateto Adjacente (c)</label>
+                    <input type="number" class="form-control" id="catetoAdjacente">
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-md-3">
+                    <button type="button" class="btn btn-primary" onclick="Calcula()">Calcular</button>
+                </div>
+            </div>
+        </form>
+        <div class="row">
+            <div class="form-group col-md-3">
+                <label for="hipotenusa">Hipotenusa</label>
+                <input type="number" class="form-control" id="hipotenusa">
+            </div>
+        </div>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+</html>
