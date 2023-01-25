@@ -1,5 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;1,900&display=swap');
+
+
+html{
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+	margin: 0;
+}
+
 #retangulo {
     height: 100px;
     width: 200px;
     background: blue;
+}
+
+nav {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 150px;
+    width: 100%;
+    z-index: 1;
+    background-color: #ff82f5;
+    border-bottom: 1px solid #000;
+    padding-top: 23px;
+    padding-bottom: 14px;
+}
+
+nav span{
+    font-size: 34px;
+    font-family: 'roboto', sans-serif;
+    padding-top: 40px;
+}
+
+.navbar{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+} 
+
+.navbar img{
+    height: 150px;
+    padding: 0 3em;
+}
+
+.info-container{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 3em;
+    padding-right: 3em;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.info-container p{
+    width: 55%;
+    font-size: 23px;
+}
+.info-container img{
+    width: 35%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 30px;
+    padding: 3em 3em;
+}
+
+form button {
+    font-family: 'Roboto', sans-serif;
+    transition: .5s;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    padding: 8px 45px;
+    background-color: rgb(150, 0, 87);
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #fcafdc;
+    color: rgb(0, 0, 0);
+}
+
+footer {
+    background-color: rgb(150 0 87);
+    padding-bottom: 40px;
+    border-top: 5px solid black;
+    padding: 2em 4em;
+}
+
+footer h2, footer p, footer a, footer span {
+	color: #D1D1D1;
+}
+
+footer h2 {
+	font-weight: 400;
+}
+
+footer a {
+	text-decoration: none;
+}
+
+footer ul {
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer li {
+	list-style: none;
+}
+
+.footer-list a {
+	transition: 0.5s;
+}
+
+.footer-list a:hover {
+	color: #FFF;
+}
+
+.footer-list li:after {
+	clear: both;
+	content: "";
+	display: block;
+}
+
+.footer-list img{
+    width: 30px;
+    margin-bottom: 20px;
+}
+
+.fab {
+	margin-right: 10px;
+	float: left;
+}
+
+.footer-list li span {
+	float: left;
+	height: 30px;
+    font-size: 18px;
+	line-height: 30px;
+    margin-bottom: 15px;
 }
