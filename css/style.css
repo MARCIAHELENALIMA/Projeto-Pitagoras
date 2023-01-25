@@ -2,19 +2,17 @@
 
 
 html{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto' sans-serif;
 }
+
 
 body {
 	margin: 0;
+    background-color: #f7f7f7;
+    font-family: 'Roboto' sans-serif;
 }
 
-#retangulo {
-    height: 100px;
-    width: 200px;
-    background: blue;
-}
-
+/* NAVBAR */
 nav {
     position: relative;
     top: 0;
@@ -47,6 +45,7 @@ nav span{
     padding: 0 3em;
 }
 
+/* SECTION*/
 .info-container{
     width: 90%;
     display: flex;
@@ -67,6 +66,7 @@ nav span{
     width: 35%;
 }
 
+/* FORM */
 form{
     display: flex;
     flex-direction: column;
@@ -88,6 +88,7 @@ form button {
     text-decoration: none;
     font-weight: bold;
     cursor: pointer;
+    margin-bottom: 30px;
 }
 
 form button:hover {
@@ -95,6 +96,20 @@ form button:hover {
     color: rgb(0, 0, 0);
 }
 
+form input{
+    border-radius: 7px;
+    border-color: transparent;
+    padding: 8px 0;
+    font-size: 18px;
+    margin: 8px 0px;
+    position: relative;
+    color: black;
+    background-color: #fcafdc;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* FOOTER */
 footer {
     background-color: rgb(150 0 87);
     padding-bottom: 40px;
@@ -103,11 +118,12 @@ footer {
 }
 
 footer h2, footer p, footer a, footer span {
-	color: #D1D1D1;
+	color: #ffffff;
 }
 
 footer h2 {
 	font-weight: 400;
+    font-size: 27px;
 }
 
 footer a {
@@ -124,14 +140,6 @@ footer ul {
 
 footer li {
 	list-style: none;
-}
-
-.footer-list a {
-	transition: 0.5s;
-}
-
-.footer-list a:hover {
-	color: #FFF;
 }
 
 .footer-list li:after {
