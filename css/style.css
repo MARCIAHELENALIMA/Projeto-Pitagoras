@@ -97,7 +97,7 @@ form button:hover {
 }
 
 form input{
-    border-radius: 7px;
+    border-radius: 13px;
     border-color: transparent;
     padding: 8px 0;
     font-size: 18px;
@@ -107,6 +107,11 @@ form input{
     background-color: #fcafdc;
     text-align: center;
     font-weight: bold;
+}
+.row{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 /* FOOTER */
